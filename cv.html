@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adam Wheatley | CV</title>
+    <style>
+        :root {
+            --primary: #E53E3E;
+            --text: #2D3748;
+            --bg: #FFFFFF;
+            --secondary-bg: #E2E8E3;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            color: var(--text);
+            background: var(--bg);
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        header {
+            padding: 2rem 0;
+            background: var(--secondary-bg);
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav a {
+            color: var(--text);
+            text-decoration: none;
+        }
+
+        .cv-header {
+            padding: 3rem 0;
+            background: var(--secondary-bg);
+        }
+
+        .contact-info {
+            margin-top: 1rem;
+            color: #4A5568;
+        }
+
+        .section {
+            padding: 2rem 0;
+            border-bottom: 1px solid #E2E8F0;
+        }
+
+        .section:last-child {
+            border-bottom: none;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        h2 {
+            font-size: 1.8rem;
+            margin-bottom: 1.5rem;
+            color: var(--primary);
+        }
+
+        h3 {
+            font-size: 1.3rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .job {
+            margin-bottom: 2rem;
+        }
+
+        .job:last-child {
+            margin-bottom: 0;
+        }
+
+        .job-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            margin-bottom: 0.5rem;
+        }
+
+        .job-title {
+            font-weight: bold;
+        }
+
+        .job-date {
+            color: #718096;
+            font-size: 0.9rem;
+        }
+
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 2rem;
+        }
+
+        .skills-category {
+            margin-bottom: 1.5rem;
+        }
+
+        .skills-category h3 {
+            color: var(--primary);
+            margin-bottom: 0.5rem;
+        }
+
+        .skills-list {
+            list-style: none;
+        }
+
+        .skills-list li {
+            margin-bottom: 0.3rem;
+        }
+
+        .intro {
+            font-size: 1.1rem;
+            color: #4A5568;
+            margin-bottom: 1rem;
+        }
+
+        @media (max-width: 768px) {
+            .job-header {
+                flex-direction: column;
+            }
+            
+            .skills-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <h1><a href="index.html">AW</a></h1>
+                <a href="index.html">Back to Portfolio</a>
+            </nav>
+        </div>
+    </header>
+
+    <section class="cv-header">
+        <div class="container">
+            <h1>Adam Wheatley</h1>
+            <p class="intro">Versatile junior Ruby developer with expertise in full-stack web development, specializing in Ruby on Rails.</p>
+            <div class="contact-info">
+                <p>12 Givendale Grove, York, YO10 3QF</p>
+                <p>07904 033 791 | adamwheatley7@gmail.com</p>
+            </div>
+        </div>
+    </section>
+
+    <div class="container">
+        <section class="section">
+            <h2>Experience</h2>
+            
+            <div class="job">
+                <div class="job-header">
+                    <h3 class="job-title">Junior Ruby Developer — STEM Learning, York</h3>
+                    <span class="job-date">March 2024 - Present</span>
+                </div>
+                <p>Collaborate with the product team to create and implement new features on the Teach Computing website. Responsibilities include:</p>
+                <ul>
+                    <li>Introducing new features and refactoring existing code for improved performance</li>
+                    <li>Developing dynamic interfaces using JavaScript, Stimulus, and CSS</li>
+                    <li>Integrating third-party services (Classmarker, Credly)</li>
+                    <li>Managing Heroku deployments across environments</li>
+                    <li>Conducting thorough testing with RSpec (96% code coverage)</li>
+                </ul>
+            </div>
+
+            <div class="job">
+                <div class="job-header">
+                    <h3 class="job-title">IT Application Support 3rd Line — STEM Learning, York</h3>
+                    <span class="job-date">September 2023 - March 2024</span>
+                </div>
+                <p>Provided comprehensive IT support for 160 employees and external partners, focusing on SharePoint, Office 365, and infrastructure management. Led SharePoint migration and managed Active Directory environments.</p>
+            </div>
+
+            <div class="job">
+                <div class="job-header">
+                    <h3 class="job-title">Support Engineer — Cloud Design Box, Hull</h3>
+                    <span class="job-date">August 2022 - September 2023</span>
+                </div>
+                <p>Specialized in automated cloud intranet solutions using SharePoint, integrating with school MIS systems and Microsoft Data Sync. Led customer consultations and onboarding processes.</p>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>Technical Skills</h2>
+            <div class="skills-grid">
+                <div class="skills-category">
+                    <h3>Programming Languages</h3>
+                    <ul class="skills-list">
+                        <li>Python</li>
+                        <li>Ruby</li>
+                        <li>PowerShell</li>
+                        <li>JavaScript</li>
+                        <li>HTML/CSS</li>
+                    </ul>
+                </div>
+
+                <div class="skills-category">
+                    <h3>Frameworks</h3>
+                    <ul class="skills-list">
+                        <li>Ruby on Rails</li>
+                        <li>Flask</li>
+                        <li>Django</li>
+                        <li>RSpec</li>
+                        <li>Dynamics</li>
+                    </ul>
+                </div>
+
+                <div class="skills-category">
+                    <h3>Development Technologies</h3>
+                    <ul class="skills-list">
+                        <li>Git/Github</li>
+                        <li>Docker</li>
+                        <li>RESTful API Services</li>
+                        <li>AWS (EC2, S3)</li>
+                        <li>Heroku</li>
+                        <li>SQL</li>
+                        <li>GraphQL</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>Education</h2>
+            <div class="job">
+                <div class="job-header">
+                    <h3>York College</h3>
+                </div>
+                <p>Media Moving Image and Information Design BTEC National Diploma</p>
+            </div>
+            <div class="job">
+                <div class="job-header">
+                    <h3>Joseph Rowntree School</h3>
+                </div>
+                <p>GCSE Passes in English, Maths, Science, Geography, Electronics</p>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
