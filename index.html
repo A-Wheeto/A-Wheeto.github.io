@@ -1,7 +1,213 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adam Wheatley | Ruby Developer</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/feather-icons/4.29.0/feather.min.js"></script>
+    <style>
+        :root {
+            --primary: #E53E3E;
+            --text: #2D3748;
+            --bg: #FFFFFF;
+            --secondary-bg: #F7FAFC;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            color: var(--text);
+            background: var(--bg);
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        header {
+            padding: 2rem 0;
+            background: var(--secondary-bg);
+        }
+
+        .hero {
+            padding: 4rem 0;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            color: #4A5568;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .skills {
+            padding: 4rem 0;
+            background: var(--secondary-bg);
+        }
+
+        .skills h2 {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+        }
+
+        .skill-card {
+            background: var(--bg);
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .projects {
+            padding: 4rem 0;
+        }
+
+        .projects h2 {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .project-card {
+            background: var(--secondary-bg);
+            padding: 2rem;
+            border-radius: 8px;
+            transition: transform 0.2s;
+        }
+
+        .project-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .contact {
+            padding: 4rem 0;
+            text-align: center;
+            background: var(--secondary-bg);
+        }
+
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .social-links a {
+            color: var(--text);
+            text-decoration: none;
+        }
+
+        .social-links a:hover {
+            color: var(--primary);
+        }
+
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2rem;
+            }
+            
+            .hero p {
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
 <body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
+    <header>
+        <div class="container">
+            <nav>
+                <h1>AW</h1>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <h1>Adam Wheatley</h1>
+            <p>Junior Ruby Developer passionate about creating clean, efficient, and user-friendly web applications</p>
+        </div>
+    </section>
+
+    <section class="skills">
+        <div class="container">
+            <h2>Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <h3>Ruby Development</h3>
+                    <p>Proficient in Ruby programming with focus on Ruby on Rails framework</p>
+                </div>
+                <div class="skill-card">
+                    <h3>Backend Development</h3>
+                    <p>Experience with MVC architecture, RESTful APIs, and database management</p>
+                </div>
+                <div class="skill-card">
+                    <h3>Version Control</h3>
+                    <p>Skilled in Git and GitHub for collaborative development</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="projects">
+        <div class="container">
+            <h2>Featured Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <h3>Project 1</h3>
+                    <p>A Ruby on Rails application for task management with real-time updates</p>
+                </div>
+                <div class="project-card">
+                    <h3>Project 2</h3>
+                    <p>API integration project using Ruby and external services</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact">
+        <div class="container">
+            <h2>Get in Touch</h2>
+            <p>I'm currently open to new opportunities</p>
+            <div class="social-links">
+                <a href="https://github.com/adamwheatley" target="_blank">
+                    <i data-feather="github"></i>
+                </a>
+                <a href="https://linkedin.com/in/adamwheatley" target="_blank">
+                    <i data-feather="linkedin"></i>
+                </a>
+                <a href="mailto:adam@example.com">
+                    <i data-feather="mail"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        feather.replace();
+    </script>
 </body>
 </html>
